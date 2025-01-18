@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "8d48d55e-2c7c-4536-9db7-29441f6fca3c",
+		"name": "Padwan Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17578413"
+	},
+	"item": [
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9099/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9099",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vader Skills",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9099/vader/skills",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9099",
+					"path": [
+						"vader",
+						"skills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Humberto Skills",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9099/humberto/skills",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9099",
+					"path": [
+						"humberto",
+						"skills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post generico",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"planet\": \"Coruscant 985\",\n    \"ranking\": 42,\n    \"classe\": \"Jedi Knight\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9099/generic-post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9099",
+					"path": [
+						"generic-post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Jedis",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"name\": \"Yoda\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 17700,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Obi-Wan Kenobi\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13400,\r\n    \"mentor\": \"Qui-Gon Jinn\"\r\n  },\r\n  {\r\n    \"name\": \"Anakin Skywalker\",\r\n    \"status\": \"jedi\",\r\n    \"midichlorians\": 27700,\r\n    \"mentor\": \"Obi-Wan Kenobi\"\r\n  },\r\n  {\r\n    \"name\": \"Luke Skywalker\",\r\n    \"status\": \"jedi\",\r\n    \"midichlorians\": 14500,\r\n    \"mentor\": \"Obi-Wan Kenobi\"\r\n  },\r\n  {\r\n    \"name\": \"Mace Windu\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 15200,\r\n    \"mentor\": \"Yoda\"\r\n  },\r\n  {\r\n    \"name\": \"Qui-Gon Jinn\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 14200,\r\n    \"mentor\": \"Conde Dooku\"\r\n  },\r\n  {\r\n    \"name\": \"Ahsoka Tano\",\r\n    \"status\": \"padawan\",\r\n    \"midichlorians\": 12000,\r\n    \"mentor\": \"Anakin Skywalker\"\r\n  },\r\n  {\r\n    \"name\": \"Kit Fisto\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13900,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Plo Koon\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13600,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Barriss Offee\",\r\n    \"status\": \"padawan\",\r\n    \"midichlorians\": 11400,\r\n    \"mentor\": \"Luminara Unduli\"\r\n  },\r\n  {\r\n    \"name\": \"Luminara Unduli\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13800,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Conde Dooku\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 15000,\r\n    \"mentor\": \"Yoda\"\r\n  },\r\n  {\r\n    \"name\": \"Ki-Adi-Mundi\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13900,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Aayla Secura\",\r\n    \"status\": \"jedi\",\r\n    \"midichlorians\": 13000,\r\n    \"mentor\": \"Quinlan Vos\"\r\n  },\r\n  {\r\n    \"name\": \"Ezra Bridger\",\r\n    \"status\": \"padawan\",\r\n    \"midichlorians\": 11800,\r\n    \"mentor\": \"Kanan Jarrus\"\r\n  },\r\n  {\r\n    \"name\": \"Kanan Jarrus\",\r\n    \"status\": \"jedi\",\r\n    \"midichlorians\": 12900,\r\n    \"mentor\": \"Depa Billaba\"\r\n  },\r\n  {\r\n    \"name\": \"Caleb Dume\",\r\n    \"status\": \"padawan\",\r\n    \"midichlorians\": 11500,\r\n    \"mentor\": \"Depa Billaba\"\r\n  },\r\n  {\r\n    \"name\": \"Depa Billaba\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13700,\r\n    \"mentor\": \"Mace Windu\"\r\n  },\r\n  {\r\n    \"name\": \"Quinlan Vos\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13500,\r\n    \"mentor\": \"Tholme\"\r\n  },\r\n  {\r\n    \"name\": \"Shaak Ti\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13800,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Stass Allie\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13200,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Adi Gallia\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13400,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Saesee Tiin\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13300,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Even Piell\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13100,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Oppo Rancisis\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13600,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Coleman Trebor\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 12900,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Eeth Koth\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13200,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Agen Kolar\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13400,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Yarael Poof\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13300,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Coleman Kcaj\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13100,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Jocasta Nu\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 12800,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Cin Drallig\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13200,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Tera Sinube\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 12900,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Kelleran Beq\",\r\n    \"status\": \"jedi\",\r\n    \"midichlorians\": 12600,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Dass Jennir\",\r\n    \"status\": \"jedi\",\r\n    \"midichlorians\": 12700,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Rahm Kota\",\r\n    \"status\": \"jedi\",\r\n    \"midichlorians\": 12900,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Tholme\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13400,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"T'ra Saa\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13300,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"K'Kruhk\",\r\n    \"status\": \"jedi\",\r\n    \"midichlorians\": 12800,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Zett Jukassa\",\r\n    \"status\": \"padawan\",\r\n    \"midichlorians\": 11300,\r\n    \"mentor\": \"Cin Drallig\"\r\n  },\r\n  {\r\n    \"name\": \"Whie Malreaux\",\r\n    \"status\": \"padawan\",\r\n    \"midichlorians\": 11400,\r\n    \"mentor\": \"Cin Drallig\"\r\n  },\r\n  {\r\n    \"name\": \"Bene\",\r\n    \"status\": \"padawan\",\r\n    \"midichlorians\": 11200,\r\n    \"mentor\": \"Cin Drallig\"\r\n  },\r\n  {\r\n    \"name\": \"Serra Keto\",\r\n    \"status\": \"padawan\",\r\n    \"midichlorians\": 11600,\r\n    \"mentor\": \"Cin Drallig\"\r\n  },\r\n  {\r\n    \"name\": \"Cal Kestis\",\r\n    \"status\": \"padawan\",\r\n    \"midichlorians\": 11900,\r\n    \"mentor\": \"Jaro Tapal\"\r\n  },\r\n  {\r\n    \"name\": \"Jaro Tapal\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13400,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Koth Melan\",\r\n    \"status\": \"jedi\",\r\n    \"midichlorians\": 12500,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Roan Shryne\",\r\n    \"status\": \"jedi\",\r\n    \"midichlorians\": 12700,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Ry-Gaul\",\r\n    \"status\": \"mestre jedi\",\r\n    \"midichlorians\": 13100,\r\n    \"mentor\": null\r\n  },\r\n  {\r\n    \"name\": \"Siri Tachi\",\r\n    \"status\": \"jedi\",\r\n    \"midichlorians\": 12900,\r\n    \"mentor\": \"Adi Gallia\"\r\n  },\r\n  {\r\n    \"name\": \"Bultar Swan\",\r\n    \"status\": \"jedi\",\r\n    \"midichlorians\": 12600,\r\n    \"mentor\": \"Micah Giiett\"\r\n  },\r\n  {\r\n    \"name\": \"Etain Tur-Mukan\",\r\n    \"status\": \"padawan\",\r\n    \"midichlorians\": 11400,\r\n    \"mentor\": \"Kast Fulier\"\r\n  },\r\n  {\r\n    \"name\": \"Knox\",\r\n    \"status\": \"padawan\",\r\n    \"midichlorians\": 11300,\r\n    \"mentor\": \"Tera Sinube\"\r\n  },\r\n  {\r\n    \"name\": \"Zule Xiss\",\r\n    \"status\": \"padawan\",\r\n    \"midichlorians\": 11500,\r\n    \"mentor\": \"Glaive\"\r\n  },\r\n  {\r\n    \"name\": \"Drake Lo'gaan\",\r\n    \"status\": \"padawan\",\r\n    \"midichlorians\": 11400,\r\n    \"mentor\": \"Roi-Lan Quis\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9099/jedi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9099",
+					"path": [
+						"jedi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Jedis Greater Than9000",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9099/jedi/midichlorians-9000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9099",
+					"path": [
+						"jedi",
+						"midichlorians-9000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Group Category",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9099/jedi/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9099",
+					"path": [
+						"jedi",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mentors",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9099/jedi/mentors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9099",
+					"path": [
+						"jedi",
+						"mentors"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
